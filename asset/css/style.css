@@ -146,11 +146,55 @@ header{
     color: #FF900E;
   }
 
+/* lovely part style in css */
+.lovely_main{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.lovely_contain{
+    max-width: 586px;
+}
+.lovely_title{
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+}
+
+.lovely-box{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.box-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.lovely_img{
+    margin-left: 130px;
+}
+
+.lovely-btn{
+    padding: 40px;
+    font-size: 1.5rem;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    margin-left: -80px;
+    margin-top: -100px;
+}
+
+.lovely-btn span{
+    font-size: 3rem;
+}
 /* mobile device responsive style in css */
 @media screen and (max-width:576px){
     .navbar,
     .nav-links,
-    .feature_main{
+    .feature_main,
+    .lovely_main{
         flex-direction: column;
     }
 
@@ -164,6 +208,14 @@ header{
         margin-left: 40px;
         margin-right: 20px;
     }
+
+    .lovely-btn{
+       display: none;
+    }
+    .lovely_img{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 /* tablet device responsive style in css */
@@ -171,11 +223,22 @@ header{
 @media screen and (min-width:576px) and (max-width:768px) {
     .navbar,
     .nav-links,
-    .feature_main{
+    .feature_main,
+    .lovely_main{
         flex-direction: column;
     }
   
     .feature-img{
         margin-bottom: 50px;
     }
+    .lovely_contain{
+        margin: 0 auto;
+    }
+    .lovely-btn{
+        display: none;
+     }
+     .lovely_img{
+         margin-left: 20px;
+         margin-right: 20px;
+     }
 }
