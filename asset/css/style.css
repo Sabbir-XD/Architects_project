@@ -249,6 +249,16 @@ header{
     justify-items: center;
     filter: grayscale(1);
 }
+/* footer part css */
+footer{
+    background-color: #FFF4E7;
+    max-width: 1440px; 
+    margin: 0 auto;
+    padding: 38px;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    text-align: center;
+}
 
 /* mobile device responsive style in css */
 @media screen and (max-width:576px){
@@ -287,6 +297,7 @@ header{
     .fact_contain{
         margin-left: 20px;
     }
+
 }
 
 /* tablet device responsive style in css */
