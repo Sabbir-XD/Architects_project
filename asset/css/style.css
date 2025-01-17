@@ -189,6 +189,67 @@ header{
 .lovely-btn span{
     font-size: 3rem;
 }
+
+/* some fact part in css */
+.some-fact{
+    margin-bottom: 100px;
+}
+.fact_contain{
+    max-width: 586px;
+    margin-bottom: 50px;
+}
+
+.fact-container{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   justify-items: center;
+}
+
+.Fact-card{
+    width: 241px;
+    height: 241px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fact-img{
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.fact-num{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.fact-text{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* sponsore part in css */
+.our-sponsors{
+    margin-bottom: 100px;
+}
+
+.sponsors-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.sponsors-companies{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    filter: grayscale(1);
+}
+
 /* mobile device responsive style in css */
 @media screen and (max-width:576px){
     .navbar,
@@ -216,11 +277,21 @@ header{
         margin-left: 20px;
         margin-right: 20px;
     }
+
+    .fact-container,
+    .sponsors-companies{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .fact_contain{
+        margin-left: 20px;
+    }
 }
 
 /* tablet device responsive style in css */
 
-@media screen and (min-width:576px) and (max-width:768px) {
+@media screen and (min-width: 576px) and (max-width: 992px) {
     .navbar,
     .nav-links,
     .feature_main,
@@ -229,6 +300,7 @@ header{
     }
   
     .feature-img{
+        justify-items: center;
         margin-bottom: 50px;
     }
     .lovely_contain{
@@ -241,4 +313,19 @@ header{
          margin-left: 20px;
          margin-right: 20px;
      }
+
+     .fact-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .sponsors-companies{
+        grid-template-columns: repeat(3,1fr);
+        gap: 50px;
+    }
+
+    .fact_contain{
+        margin-left: 20px;
+    }
+
 }
